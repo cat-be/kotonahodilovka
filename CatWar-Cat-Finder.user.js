@@ -8,8 +8,8 @@
 // @match        *://*.catwar.net/cw3*
 // @match        *://catwar.su/cw3*
 // @match        *://*.catwar.su/cw3*
-// @updateURL    https://raw.githubusercontent.com/cat-be/kotonahodilovka/main/Kotonahodilovka.user.js
-// @downloadURL  https://raw.githubusercontent.com/cat-be/kotonahodilovka/main/Kotonahodilovka.user.js
+// @updateURL    https://raw.githubusercontent.com/cat-be/kotonahodilovka/main/CatWar-Cat-Finder.user.js
+// @downloadURL  https://raw.githubusercontent.com/cat-be/kotonahodilovka/main/CatWar-Cat-Finder.user.js
 // @grant        none
 // ==/UserScript==
 
