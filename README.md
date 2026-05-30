@@ -1,4 +1,4 @@
-# CatWar Cat Finder для Tampermonkey
+# Котонаходиловка
 
 ## Использование
 
