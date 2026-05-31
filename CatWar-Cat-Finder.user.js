@@ -4,10 +4,8 @@
 // @version      1.0
 // @description  Подсвечивает котов на текущей локации CatWar по имени или ID.
 // @author       Жаровей (1080554)
-// @match        *://catwar.net/cw3*
-// @match        *://*.catwar.net/cw3*
-// @match        *://catwar.su/cw3*
-// @match        *://*.catwar.su/cw3*
+// @match        *://catwar.net/*
+// @match        *://catwar.su/*
 // @updateURL    https://raw.githubusercontent.com/cat-be/kotonahodilovka/main/CatWar-Cat-Finder.user.js
 // @downloadURL  https://raw.githubusercontent.com/cat-be/kotonahodilovka/main/CatWar-Cat-Finder.user.js
 // @grant        none
@@ -15,6 +13,9 @@
 
 (function () {
   "use strict";
+  const pageurl = window.location.href;
+  const isCW3 = /^https?:\/\/\w*\.?catwar\.(su|net)\/cw3(?!\/(kns|jagd))/.test(pageurl);
+  if (!isCW3) return;
 
   const STORAGE_KEY = "cwCatFinderSettings";
   const HIGHLIGHT_CLASS = "cwcf-highlight";
